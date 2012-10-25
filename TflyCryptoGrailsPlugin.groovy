@@ -1,10 +1,11 @@
+class TflyCryptoGrailsPlugin {
+    def groupId = "com.ticketfly.plugins"
+    def version = "2.0.0.TFLY"
 
-class CryptoGrailsPlugin {
-	def version = "1.1"
-	def dependsOn = [:]
+    def dependsOn = [:]
 
     // TODO Add accent once Grail's UTF-8 bug is fixed
-	def author = "Ricardo J. Mendez"
+    def author = "Ricardo J. Mendez"
     def authorEmail = "ricardo@arquetipos.co.cr"
     def title = "Encryption plugin for Grails"
     def description = '''\

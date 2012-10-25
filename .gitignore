@@ -3,3 +3,4 @@
 /grails-encryption.ipr
 /grails-encryption.iws
 /target/
+*.zip

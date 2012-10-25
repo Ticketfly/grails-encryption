@@ -1,6 +1,6 @@
 class TflyCryptoGrailsPlugin {
     def groupId = "com.ticketfly.plugins"
-    def version = "2.0.0.TFLY"
+    def version = "2.0.1.TFLY"
 
     def dependsOn = [:]
 

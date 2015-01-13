@@ -4,7 +4,7 @@ import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
 import java.security.SecureRandom
 
-import org.codehaus.groovy.grails.commons.ConfigurationHolder as CH
+import grails.util.Holders as CH
 
 /**
  * Encapsulates several password-related utility functions

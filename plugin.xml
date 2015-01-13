@@ -1,4 +1,4 @@
-<plugin name='crypto' version='2.0' grailsVersion='1.1 &gt; *'>
+<plugin name='crypto' version='2.0.1-grails2.4-SNAPSHOT' grailsVersion='2.2.3 &gt; *'>
   <author>Ricardo J. Mendez and Robert Fischer</author>
   <authorEmail>ricardo@arquetipos.co.cr</authorEmail>
   <title>Encryption plugin for Grails</title>
@@ -7,11 +7,23 @@ Castle. This version provides classes for PGP and Blowfish, as well as a
 tool for both generating random passwords and salting / verifying salted
 passwords.
 </description>
+  <type>CryptoGrailsPlugin</type>
   <resources>
-    <resource>UrlMappings</resource>
     <resource>EncryptedData</resource>
     <resource>SimplePasswordManagerService</resource>
     <resource>HexCodec</resource>
   </resources>
-  <dependencies />
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='org.bouncycastle' name='bcprov-ext-jdk15on' version='1.47' />
+      <dependency group='org.bouncycastle' name='bcpg-jdk15on' version='1.47' />
+    </compile>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
 </plugin>

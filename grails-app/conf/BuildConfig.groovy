@@ -28,7 +28,17 @@ grails.project.dependency.resolution = {
 
         compile('org.bouncycastle:bcpg-jdk15on:1.47') {
             excludes 'bcprov-jdk15on'
+            export = true
         }
-        compile 'org.bouncycastle:bcprov-ext-jdk15on:1.47'
+        compile('org.bouncycastle:bcprov-ext-jdk15on:1.47') {
+            export = true
+        }
+    }
+    plugins {
+        build(":tomcat:$grailsVersion",
+                ":release:2.2.1",
+                ":rest-client-builder:1.0.3") {
+            export = false
+        }
     }
 }
